@@ -1,0 +1,10 @@
+.cars {
+  width: 40px; }
+
+#car:focus {
+  outline: 1px dashed black; }
+
+#car {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0; }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* var name = prompt('enter your name','');
+         if (name === 'dima') {
+             alert('hello admin');
+         } else if (name === 'sanya') {
+             alert('hello dady');
+         } else if (name === 'natasha') {
+             alert('hello mother');
+         } else  {
+             alert('i don*t know you');
+         }*/
+
+        /*for( var i = 3; i < 10000; i=i*3){
+            console.log(i);
+        }*/
+        /*var x = 1;
+        while(x < 10000){
+            x = (x *3);
+            
+            console.log(x);
+        }*/
+        /*var animalsArr = ['cat', 'dog', 'parrrot', 'elephant', 'aligator'];
+        for (var i = 0; i < animalsArr.length; i++) {
+            console.log(animalsArr[i] + '   -прекрастное животное');
+
+        }*/
+        /*var alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+        var randomString = '';
+        while (randomString < 6) {
+            randomString = [Math.floor(Math.random() * alphabet.length)];
+            randomString += alphabet[randomString];
+           
+        } console.log(randomString);*/
+        /*var input = 'javascript is awesome';
+        var output = '';
+        for (var i = 0; i<input.length; i++){
+            
+            
+        }*/
+        /* var name = prompt('Hello, please enter your name:','');
+         var likesCats = confirm('Do you likes cats?');
+         if(likesCats){
+             alert('It`s cool ');
+         } else {
+             alert('It`s not problem)');
+         }*/
+        var name = prompt('Hello, please enter your name:', '');
+        var words = ['програма', 'справа', 'робота', 'рука', 'макака'];
+        var word = words[Math.floor(Math.random() * words.length)];
+        var answerArr = [];
+        for (var i = 0; i < words.length; i++) {
+            answerArr[i] = '_';
+            console.log(answerArr);
+        }
+        var remainingLeters = word.length;
+        var guess = prompt('угадайте букву или нажмите отмета для выхода');
+        if (guess = null) {
+            bleak;
+        } else if (guess.length !== 1) {
+            alert('введите только одну букву');
+        } else {
+            for (var j = 0; j < word.length; j++) {
+                if ( word[j] === guess) {
+                    answerArray[j] = guess;
+                    remainingLetters--;
+                }
+            }
+        }
+        console.log(remainingLeters);
+        while (remainingLeters > 0) {
+            alert(answerArr.join(' '));
+            console.log(answerArr);
+        }
+    </script>
+<script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="lesson_11.js"></script></body>
+
+</html>

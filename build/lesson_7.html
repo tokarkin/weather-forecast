@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <title>lesson_7</title>
+<link href="lesson_7.css" rel="stylesheet"></head>
+
+<body>
+    <header class="page__header">
+        <div class=" page__header__nav ">
+            <h1 class=" page__header__nav__logo">themoviebox</h1>
+            <div class=" page__header__nav__btn btn ">
+                <i class="btn__search fas fa-search"></i>
+                <button class="btn__login">log in </button>
+                <button class="btn__singup">sign in</button>
+            </div>
+        </div>
+        <div class="header-menu-btn">
+            <span></span>
+        </div>
+        <div class="page__header__headline ">
+            <h1 class="page__header__headline__name">Wrath of the titans</h1>
+            <div class="page__header__headline__genre genre">
+                <p class="genre__name">Fantasy</p>
+                <p class="genre__name">Animation</p>
+                <p class="genre__name">Family</p>
+                <span class="genre__name__line"></span>
+                <p class="genre__name">Duration : 1h 52m</p>
+            </div>
+        </div>
+        <div class="page__header__footer">
+            <div class="page__header__footer__btn btn__footer">
+                <button class="btn__footer__watch">watch movie</button>
+                <button class="btn__footer__info">view info</button>
+                <button class="btn__footer__add">+ add to wishlist</button>
+            </div>
+            <div class="page__header__footer__rating rating">
+                <p class="rating__view">rating
+                    <span class="rating__based">based on 3 648 reviews</span>
+                </p>
+                <div class="star-rating">
+                    <div class="star-rating__wrap">
+                        <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                            title="5 out of 5 stars"></label>
+                        <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                            title="4 out of 5 stars"></label>
+                        <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                            title="3 out of 5 stars"></label>
+                        <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                            title="2 out of 5 stars"></label>
+                        <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                            title="1 out of 5 stars"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="catalog">
+        <div class="catalog__header">
+            <ul class="catalog__menu menu">
+                <li class="menu__item">
+                    <button class="menu__btn menu__btn_active">Trending</button>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__btn">Top Rated</button>
+                </li>
+                <li class="menu__item">
+                    <button class="menu__btn">New Arrivals</button>
+                </li>
+
+                <li class="menu__item">
+                    <button class="menu__btn">Genre
+                        <div class="catalog-menu-btn">
+                            <span></span>
+                        </div>
+                    </button>
+                </li>
+                <div class="cube">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="line">
+                    <span></span>
+                </div>
+            </ul>
+
+        </div>
+        <div class="catalog__content row">
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/bitmap.jpg" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">Logan</h3>
+                        <h4 class="movie__description__genre">Action, Adventure, Fantasy</h4>
+                        <span class="movie__description__grade">4.0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/bitmap2.png" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">John Wick: Chapter 2</h3>
+                        <h4 class="movie__description__genre">Action, Thriller</h4>
+                        <span class="movie__description__grade">4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/bitmap3.jpg" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">Fantastic beasts an…</h3>
+                        <h4 class="movie__description__genre">Adventure, Fantasy, Action</h4>
+                        <span class="movie__description__grade">4.5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/bitmap4.jpg" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">Beauty and the Beast</h3>
+                        <h4 class="movie__description__genre">Musical, Drama, Fantasy</h4>
+                        <span class="movie__description__grade">4.4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/second_image.jpg" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">Justice Liga</h3>
+                        <h4 class="movie__description__genre">Musical, Drama, Fantasy</h4>
+                        <span class="movie__description__grade">4.4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/bitmap4.jpg" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">Beauty and the Beast</h3>
+                        <h4 class="movie__description__genre">Musical, Drama, Fantasy</h4>
+                        <span class="movie__description__grade">4.4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/bitmap4.jpg" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">Beauty and the Beast</h3>
+                        <h4 class="movie__description__genre">Musical, Drama, Fantasy</h4>
+                        <span class="movie__description__grade">4.4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/bitmap4.jpg" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">Beauty and the Beast</h3>
+                        <h4 class="movie__description__genre">Musical, Drama, Fantasy</h4>
+                        <span class="movie__description__grade">4.4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/bitmap4.jpg" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">Beauty and the Beast</h3>
+                        <h4 class="movie__description__genre">Musical, Drama, Fantasy</h4>
+                        <span class="movie__description__grade">4.4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/bitmap4.jpg" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">Beauty and the Beast</h3>
+                        <h4 class="movie__description__genre">Musical, Drama, Fantasy</h4>
+                        <span class="movie__description__grade">4.4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/bitmap4.jpg" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">Beauty and the Beast</h3>
+                        <h4 class="movie__description__genre">Musical, Drama, Fantasy</h4>
+                        <span class="movie__description__grade">4.4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="movie">
+                    <div class="movie__pic">
+                        <img src="./assets/images/bitmap4.jpg" alt="" />
+                    </div>
+                    <div class="movie__description">
+                        <h3 class="movie__description__name">Beauty and the Beast</h3>
+                        <h4 class="movie__description__genre">Musical, Drama, Fantasy</h4>
+                        <span class="movie__description__grade">4.4</span>
+                    </div>
+                </div>
+            </div>
+            <div class="loading">
+            </div>
+        </div>
+        <div class="catalog__footer">
+            <div class="catalog__footer__header">
+               <h1 class="catalog__footer__header__logo">Moviebox</h1>
+               <ul class="catalog__footer__header__menu footer__menu">
+                   <li class="footer__menu__items">
+                       <a href="" class="footer__menu__items__item">About</a>
+                    </li>
+                   <li class="footer__menu__items">
+                       <a href="" class="footer__menu__items__item">Movies</a>
+                    </li>
+                   <li class="footer__menu__items">
+                       <a href="" class="footer__menu__items__item">Ratings</a>
+                    </li>
+                   <li class="footer__menu__items">
+                       <a href="" class="footer__menu__items__item">Contact</a>
+                    </li>
+               </ul>
+               <span class="catalog__footer__header__author">Designed by Milan Houter. All rights reserved.</span> 
+            </div>
+        </div>
+
+    </section>
+    <script>
+        const btn = document.querySelector('.header-menu-btn');
+        const pageMenu = document.querySelector('.page__header__nav__btn');
+        btn.addEventListener('click', () => {
+            pageMenu.classList.toggle('page-menu_active');
+            btn.classList.toggle('header-menu-button-active');
+        })
+    </script>
+<script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="lesson_7.js"></script></body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link href="hom_list.css" rel="stylesheet"></head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <button class="menu__btn" value="GOf">First </button>
+            <ul class="menu__list ">
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">Home</button>
+                </li>
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">Contants</button>
+                </li>
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">About</button>
+                </li>
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">Go to</button>
+                </li>
+            </ul>
+        </div>
+        <div class="menu">
+            <button class="menu__btn">Second</button>
+            <ul class="menu__list">
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">Home</button>
+                </li>
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">Contants</button>
+                </li>
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">About</button>
+                </li>
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">Go to</button>
+                </li>
+            </ul>
+        </div>
+        <div class="menu">
+            <button class="menu__btn">Third</button>
+            <ul class="menu__list">
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">Home</button>
+                </li>
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">Contants</button>
+                </li>
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">About</button>
+                </li>
+                <li class="menu__list__items">
+                    <button class="menu__list__items__btn">Go to</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelectorAll('.menu__btn');
+        console.log(btn);
+        const pageMenu = document.querySelectorAll('.menu__list');
+        const menu = document.getElementsByClassName('menu__list__items');
+        // btn.addEventListener('click', () => {
+        //     pageMenu.classList.toggle('page-menu_active');
+        // })
+        for (let j = 0; j < btn.length; j++) {
+            console.log(btn[j]);
+            let btnClick = btn[j];
+            let pageMenuLink = pageMenu[j];
+            console.log(pageMenu[j]);
+            
+            btnClick.onclick = function () {
+                colorRandomBtn();
+                pageMenuLink.classList.toggle('page-menu_active'); 
+                const name = pageMenuLink.getElementsByClassName('menu__list__items__btn');
+                for (let i = 0; i < name.length; i++) {
+                    let menus = name[i];
+                    colorRandom();
+                    menus.onclick = function () {
+                        pageMenuLink.classList.remove('page-menu_active');
+                        console.log(this.textContent);
+                        btnClick.textContent = this.textContent;
+                    }
+                }
+            }
+            function colorRandom() {
+                let arr = ['red', 'yellow', 'green', 'orange', 'margin', 'blue'];
+                let rand = arr[Math.floor(Math.random() * arr.length)];
+                pageMenuLink.style.backgroundColor = rand;
+                
+            }
+            function colorRandomBtn() {
+                let arr = ['red', 'yellow', 'green', 'orange', 'margin', 'white','blue'];
+                let rand = arr[Math.floor(Math.random() * arr.length)];
+                btnClick.style.backgroundColor = rand;
+            }
+        }
+    </script>
+<script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="hom_list.js"></script></body>
+
+</html>

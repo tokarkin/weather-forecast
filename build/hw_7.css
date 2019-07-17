@@ -1,0 +1,22 @@
+.container {
+  margin: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.bulb {
+  margin-top: 20px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid black;
+  outline: none; }
+
+.active {
+  background: transparent; }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="calc1()">click me</button>
+    <button onclick="stop()">stop</button>
+    <script>
+        let totalsum = 0;
+        function calc1() {
+            let totalsum = 0;
+            var num;
+            do {
+                num = prompt("Введите число ", 0);
+                if (!isNaN(num)) {
+                    totalsum = totalsum + Number(num);
+                    console.log(totalsum);
+                } else {
+                    break;
+                }
+            } while
+                (num <= Infinity && num != null);
+            alert('sum:' + totalsum);
+        }
+        let sum = 0;
+       /* function stop() {
+            let sum = 0;
+            let number = 0;
+            number = prompt('enter number', 0);
+            do {
+                for (let i = 0; i <= number; i++) {
+                    console.log(number);
+                }
+            } while
+                (number <= Infinity && number != null);
+        }
+    </script>
+<script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="homework.js"></script></body>
+
+</html>

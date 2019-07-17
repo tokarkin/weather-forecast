@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link href="game2.css" rel="stylesheet"></head>
+
+<body>
+    <div style="width:300px; height:300px; border: 1px solid red; position: relative;">
+        <img id="car" tabindex="0" class="cars"
+            src="./assets/images/27935-3-hot-wheels-transparent-thumb.png" alt="">
+        <img id="car2" tabindex="1" class="cars"
+            src="./assets/images/27935-3-hot-wheels-transparent-thumb.png" alt="">
+    </div>
+    <script>
+        document.getElementById('car').onclick = function () {
+            console.log(car);
+            this.style.left = this.getBoundingClientRect().left + 'px';
+            this.style.top = this.getBoundingClientRect().top + 'px';
+
+            this.style.position = 'absolute';
+        };
+
+        document.getElementById('car').onkeydown = function (e) {
+            switch (e.keyCode) {
+                case 37: // влево
+                    console.log(e);
+                    this.style.left = parseInt(this.style.left) - this.offsetWidth + 'px';
+                    return false;
+                case 38: // вверх
+                    console.log(e);
+                    this.style.top = parseInt(this.style.top) - this.offsetHeight + 'px';
+                    return false;
+                case 39: // вправо
+                    console.log(e);
+                    this.style.left = parseInt(this.style.left) + this.offsetWidth + 'px';
+                    return false;
+                case 40: // вниз
+                    console.log(e);
+                    this.style.top = parseInt(this.style.top) + this.offsetHeight + 'px';
+                    return false;
+            }
+        };
+         document.getElementById('car2').onclick = function () {
+            console.log(car);
+            this.style.left = this.getBoundingClientRect().left + 'px';
+            this.style.top = this.getBoundingClientRect().top + 'px';
+
+            this.style.position = 'absolute';
+        };
+
+        document.getElementById('car2').onkeydown = function (e) {
+            switch (e.keyCode) {
+                case 65: // влево
+                    console.log(e);
+                    this.style.left = parseInt(this.style.left) - this.offsetWidth + 'px';
+                    return false;
+                case 87: // вверх
+                    console.log(e);
+                    this.style.top = parseInt(this.style.top) - this.offsetHeight + 'px';
+                    return false;
+                case 68: // вправо
+                    console.log(e);
+                    this.style.left = parseInt(this.style.left) + this.offsetWidth + 'px';
+                    return false;
+                case 83: // вниз
+                    console.log(e);
+                    this.style.top = parseInt(this.style.top) + this.offsetHeight + 'px';
+                    return false;
+            }
+        };
+    </script>
+<script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="game2.js"></script></body>
+
+</html>

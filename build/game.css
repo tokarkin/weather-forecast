@@ -1,0 +1,10 @@
+body {
+  margin: 0; }
+.game {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid red; }
+.car {
+  position: relative;
+  width: 40px;
+  display: block; }

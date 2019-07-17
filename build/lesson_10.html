@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link href="lesson_10.css" rel="stylesheet"></head>
+
+<body>
+    Please open concole
+    <button onclick = "greet()">Click me!</button> 
+    <button onclick = "calc()">Touch me twice</button>
+    <button onclick="count()">Counter</button>
+    <script>
+        function greet() {
+            let name = prompt('Enter your name:', '');
+            console.log(name);
+            if (name === 'admin') {
+                alert('Hello admin');
+            } else {
+                alert('I don\`t know you');
+            }
+        }
+        
+        
+        function calc() {
+            
+            let a = prompt('Enter a:','0');
+            a = Number(a);
+            let b = prompt('enter b:', '0');
+            b = Number(b);
+            if ( !isNaN(a) && !isNaN(b)){
+                alert (a + b);
+            } else{
+                alert('not a nubmer');
+            }
+        }
+        let totalClicks = 0;
+        function count(){
+            totalClicks = totalClicks + 1;
+            console.log(totalClicks);
+        }
+        let totalsum = 0;
+        function count1(){
+            let nubmer = prompt ('enter nubmer', 0);
+            totalsum = totalsum + nubmer;
+            alert(totalsum);
+        }
+        //recursia
+
+        //validazia
+        /*let name2 = 'Dima';
+        name2 = Number('20'); //явный,
+        name2 = parseInt ('20',10);//явный число из рядка
+        name2 = parseFloat('20');
+        name2 = (20).toString(); //stroka
+        // to bool
+        const name = ' ';
+        console.log( Boolean(name));
+        const name = {};
+        */
+    </script>
+<script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="lesson_10.js"></script></body>
+
+</html>
